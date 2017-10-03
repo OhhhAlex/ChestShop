@@ -288,7 +288,7 @@ class Main extends PluginBase{
 		}
 	}
 
-	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
 		if(isset($args[0])){
 			switch(strtolower($args[0])){
 				case "help":
